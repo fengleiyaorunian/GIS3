@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>7.21浚县洪水受灾情况</title>
+
+		<script src="javascript/jquery.js"></script>
+
+		<link rel="stylesheet" href="sheetStyle/discribe.css">
+		<link rel="stylesheet" href="https://js.arcgis.com/4.23/esri/themes/light/main.css">
+
+		<link rel="stylesheet" href="sheetStyle/xiushi.css">
+
+		<!-- Echarts的调用 -->
+		<script rel="stylesheet" src="javascript/echarts.min.js"></script>
+
+		<!-- 新 Bootstrap5 核心 CSS 文件 -->
+		<link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+
+		<script src="https://js.arcgis.com/4.23/"></script> <!-- 必须放在最后，不然会报错 -->
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+			<a class="navbar-brand">GIS-3</a>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link"
+							href="xunxian0.html">灾情直击</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link"
+							href="xunxian.html">地图查看</a>
+					</li>
+
+
+					<!-- 遥感影像的下拉菜单 -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
+							哨兵影像卷帘（仅地图网页中生效）
+						</a>
+						<div class="dropdown-menu">
+
+							<span><input id="check1" type="checkbox" checked>
+								2021年7月30日-洪灾8天后
+								(真假彩色)</span>
+
+							<br>
+							<span><input id="check2" type="checkbox" checked>
+								2020年9月4日-无洪灾
+								(真假彩色)</span>
+						</div>
+					</li>
+
+					<li class="nav-item">
+						<button id="weather1" class="nav-link">气象数据</button>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="xunxian2.html">受灾后的报道</a>
+					</li>
+					
+				</ul>
+			</div>
+		</nav>
+		
+		<div style="width: 80%;margin: auto" >
+		    <h1 style="text-align: center">灾情直击</h1>
+			<p class="emphesis" >
+			降雨量极大超历史最高纪录2倍以上
+			</p>
+		    <p>
+
+
+				洪利民介绍，7月17日8时至23日12时，全市平均降水量613毫米，最大雨量点降水量1145.4毫米，全市64个雨量监测站点超500毫米的有40个、占到64.5%，剩余站点全部都在250毫米以上，日均降雨量和日最大降水量均超过历史最高纪录“63·8”暴雨的2倍，市域内降水量超过100个西湖，加上上游来水，全域内迅速一片汪洋。
+		        
+			</p>
+			<img style="position: relative;left: 25%;" src="sheetStyle/5.jpeg">
+			<p style="text-align: center">接收物资的浚县消防救援大队</p>
+			<p class="emphesis" > 全市受灾人口101.8万人 占总人口的65.1% </p>
+			<p>
+		        强降雨过程使城市农村全域大面积积水，332个小区积水较多，其中176个严重积水，所有下穿涵洞、低洼道路全部被淹，致使交通一度瘫痪。蓄滞洪区内和决口洪水经过的501个村庄全部淹没，已经启用的5个蓄滞洪区承纳洪水近4亿立方米。截至28日中午12时，全市农作物受灾面积112.8万亩、成灾102.9万亩；全市范围特别是蓄滞洪区内的养殖场（户）遭受毁灭性打击，受灾死亡畜禽达到204.6万头（只）。倒塌房屋1.8万间、严重损坏4.8万间、一般损坏34.4万间。受损企业700多家，物料等损失严重。全市受灾人口101.8万人、占总人口的65.1%，直接经济损失177.6亿元。
+		    </p>
+			<p class="emphesis" > 汛情险象环生 卫河大堤决口 </p>
+			
+			<p>
+		        最严重时，全市卫河、淇河等13条河流全部超保证水位。14座水库中，盘石头、夺丰等“一大一中七小”9座水库超汛限水位。特别是卫河，呈“五大汇流”态势，淇河、共产主义渠、沧河、盘石头水库、塔岗水库分洪泄洪，形成5股大洪水汇入，洪水高位运行，沿线堤坝承受巨大压力，经过数日连续浸泡且多处漫堤，浚县新镇镇彭村段卫河左堤在23日1时20分决堤，泄出的洪水迅速淹没16个村庄，经过70多个小时的昼夜奋战，才最终合龙成功。
+			</p>
+			<p class="emphesis" > 淇县受灾人口约17.2万人 直接经济损失达46.8亿元</p>
+				
+		    <p>
+				淇县西部山区山洪爆发、道路塌方；城区思德河、沬水河水位暴涨，部分地区发生内涝；东南部淇河、卫河、共产主义渠全部超过警戒水位。受灾人口约17.2万人，直接经济损失达46.8亿元，特别是作为养殖业大县，畜禽大量受灾死亡，损失惨重。
+　　			</p>
+		    <img style="position: relative;left: 25%;" src="sheetStyle/4.jpeg">
+		    <p style="text-align: center">浚县受灾图</p>
+			
+			
+		</div>
+		
+		
+	</body>
+</html>
